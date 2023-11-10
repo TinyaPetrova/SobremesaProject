@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300&family=Montserrat:wght@100;300&family=Pacifico&family=Pixelify+Sans:wght@400;500&family=Roboto:ital,wght@0,100;1,100&family=Sedgwick+Ave+Display&family=Signika+Negative&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/src/img/favicon-16x16.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/weather-style.css">
+    <title>Sobremesa</title>
+    </head>
+    <body>
+      <header>
+        <nav>
+            <a class="logo" href="index.html">🤍 SOBREMESA</a>
+            <a href="/start.html">Let's start!</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="games.html">Games</a>
+            <a href="weather.html">Weather</a>
+        </nav>
+      </header>
+      <main>
+        <div class="weather-container">
+            <div class="recommendations">
+                <p class="weather-intro">
+                    <b>What's the weather like today?</b> <br><br>
+                    Our weather widget won't cheat: it will tell you exactly whether it makes sense to set the table outside or whether it's better to gather with friends for dinner at home, in front of a warm fireplace
+                </p>
+                <p id="weather-intro"></p>
+            </div>
+            <div class="weather-card" id="weatherCard">
+                <p class="location" id="locationText">You're here now:</p>
+                <p class="city" id="city"></p>
+                <div class="coordinates">
+                    <p id="latitude"></p>
+                    <p id="longitude"></p>
+                </div><br>
+                <div id="loader" class="loader" style="display: none"></div>
+                <div class="temp">
+                    <img src="/src/content/default.png" alt="weather pic" class="weatherIcon" id="weatherIcon">
+                    <p class="temperature" id="temperature"></p>
+                </div><br>
+                <div class="wind-and-description">
+                    <div class="wind" id="windElement" style="display: none">
+                        <img src="/src/content/wind.png" alt="wind" class="windImg">
+                        <p class="windSpeed" id="windSpeed"></p>
+                    </div>
+                    <div class="description">
+                        <p id="description"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <img class="nyan" src="/src/img/nyan-weather.png" alt="hello">
+            <div>
+                <p class="textbox-text">Alright, let's check it..</p>
+                <img class="textbox" src="/src/img/textbox.png" alt="textbox">
+              </div>
+            <script src="/src/weather.js" defer></script>
+      </main>
+      <footer>
+        <div class="media">
+          <div class="copyright">
+            &copy; 2023 All rights are reserved<pre><pre>
+          </div>
+          <div class="media-images">
+            <img class="media-img" src="/src/media/inst.png" alt="Instagram">
+            <img class="media-img" src="/src/media/twitter.png" alt="Twitter">
+            <img class="media-img" src="/src/media/face.png" alt="FaceBook">
+            <img class="media-img" src="/src/media/youtube.png" alt="YouTube">
+          </div>
+        </div>
+      </footer>
+    <script type="module" src="/src/weather.js"></script>
+  </body>
+</html>

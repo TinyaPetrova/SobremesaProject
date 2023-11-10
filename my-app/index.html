@@ -2,13 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>React Redux App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300&family=Montserrat:wght@100;300&family=Pacifico&family=Pixelify+Sans:wght@400;500&family=Roboto:ital,wght@0,100;1,100&family=Sedgwick+Ave+Display&family=Signika+Negative&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="/src/img/favicon-16x16.png" />
+    <link rel="stylesheet" href="./src/index.css">
+    <title>Sobremesa</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+      <header>
+        <nav>
+          <a class="logo" href="index.html">🤍 SOBREMESA</a>
+          <a href="./start.html">Let's start!</a>
+          <a href="./recipes.html">Recipes</a>
+          <a href="./games.html">Games</a>
+          <a href="./weather.html">Weather</a>
+        </nav>
+      </header>
+      <main>
+        <div class="start-page">
+          <img class="gif" src="/src/img/food.gif" alt="food">
+          <img class="gif2" src="/src/img/food.gif" alt="food2">
+          <img class="gif3" src="/src/img/food.gif" alt="food3">
+          <img class="gif4" src="/src/img/food.gif" alt="food4">
+          <p class="start-text">Welcome to Sobremesa, my friend!</p>
+        </div>
+        <img class="nyan" src="/src/img/nyan-hello.png" alt="hello">
+        <div>
+          <p class="textbox-text">Pick any option above</p>
+          <img class="textbox" src="/src/img/textbox.png" alt="textbox">
+        </div>
+      </main>
+      <footer>
+        <div class="media">
+          <div class="copyright">
+            &copy; 2023 All rights are reserved<pre><pre>
+          </div>
+          <div class="media-images">
+            <img class="media-img" src="/src/media/inst.png" alt="Instagram">
+            <img class="media-img" src="/src/media/twitter.png" alt="Twitter">
+            <img class="media-img" src="/src/media/face.png" alt="FaceBook">
+            <img class="media-img" src="/src/media/youtube.png" alt="YouTube">
+          </div>
+        </div>
+      </footer>
     <script type="module" src="/src/main.tsx"></script>
+    <script src="/src/cardActions.js" defer></script>
   </body>
 </html>
